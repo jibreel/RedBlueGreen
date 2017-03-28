@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">redbluegreen</string>
+    <string name="show_me_the_color">Show me the color!</string>
+    <string name="green_value">Green Value</string>
+    <string name="blue_value">Blue Value</string>
+    <string name="red_value">Red Value</string>
 </resources>
