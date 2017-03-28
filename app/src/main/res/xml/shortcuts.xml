@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="red"
+        android:enabled="true"
+        android:shortcutShortLabel="@string/red"
+        android:shortcutLongLabel="@string/show_me_red">
+            <intent
+                android:action="com.jibreelpowell.redbluegreen.RED"
+                android:targetPackage="com.jibreelpowell.redbluegreen"
+                android:targetClass="com.jibreelpowell.redbluegreen.MainActvity"
+                />
+    </shortcut>
+</shortcuts>
