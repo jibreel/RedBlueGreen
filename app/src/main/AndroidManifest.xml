@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="jibreelpowell.com.redbluegreen"
+<manifest package="com.jibreelpowell.redbluegreen"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -11,9 +11,13 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
+                <action android:name="com.jibreelpowell.redbluegreen.RED"/>
+                <action android:name="com.jibreelpowell.redbluegreen.BLUE"/>
+                <action android:name="com.jibreelpowell.redbluegreen.GREEN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+            <meta-data android:name="android.app.shortcuts"
+                       android:resource="@xml/shortcuts"/>
         </activity>
     </application>
 

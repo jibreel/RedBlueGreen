@@ -4,4 +4,6 @@
     <string name="green_value">Green Value</string>
     <string name="blue_value">Blue Value</string>
     <string name="red_value">Red Value</string>
+    <string name="red">Red</string>
+    <string name="show_me_red">Show me red!</string>
 </resources>
