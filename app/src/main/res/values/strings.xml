@@ -5,5 +5,9 @@
     <string name="blue_value">Blue Value</string>
     <string name="red_value">Red Value</string>
     <string name="red">Red</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
     <string name="show_me_red">Show me red!</string>
+    <string name="show_me_blue">Show me blue!</string>
+    <string name="show_me_green">Show me green!</string>
 </resources>

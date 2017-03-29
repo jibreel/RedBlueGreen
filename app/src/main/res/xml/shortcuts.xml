@@ -3,12 +3,37 @@
     <shortcut
         android:shortcutId="red"
         android:enabled="true"
+        android:icon="@drawable/red_circle"
         android:shortcutShortLabel="@string/red"
         android:shortcutLongLabel="@string/show_me_red">
             <intent
                 android:action="com.jibreelpowell.redbluegreen.RED"
                 android:targetPackage="com.jibreelpowell.redbluegreen"
-                android:targetClass="com.jibreelpowell.redbluegreen.MainActvity"
+                android:targetClass="com.jibreelpowell.redbluegreen.MainActivity"
                 />
+    </shortcut>
+    <shortcut
+        android:shortcutId="blue"
+        android:enabled="true"
+        android:icon="@drawable/blue_circle"
+        android:shortcutShortLabel="@string/blue"
+        android:shortcutLongLabel="@string/show_me_blue">
+        <intent
+            android:action="com.jibreelpowell.redbluegreen.BLUE"
+            android:targetPackage="com.jibreelpowell.redbluegreen"
+            android:targetClass="com.jibreelpowell.redbluegreen.MainActivity"
+            />
+    </shortcut>
+    <shortcut
+        android:shortcutId="green"
+        android:enabled="true"
+        android:icon="@drawable/green_circle"
+        android:shortcutShortLabel="@string/green"
+        android:shortcutLongLabel="@string/show_me_green">
+        <intent
+            android:action="com.jibreelpowell.redbluegreen.GREEN"
+            android:targetPackage="com.jibreelpowell.redbluegreen"
+            android:targetClass="com.jibreelpowell.redbluegreen.MainActivity"
+            />
     </shortcut>
 </shortcuts>
