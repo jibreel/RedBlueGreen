@@ -14,6 +14,7 @@
                 <action android:name="com.jibreelpowell.redbluegreen.RED"/>
                 <action android:name="com.jibreelpowell.redbluegreen.BLUE"/>
                 <action android:name="com.jibreelpowell.redbluegreen.GREEN"/>
+                <action android:name="com.jibreelpowell.redbluegreen.USER_COLOR"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             <meta-data android:name="android.app.shortcuts"

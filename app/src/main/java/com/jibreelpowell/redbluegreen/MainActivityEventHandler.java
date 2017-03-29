@@ -1,6 +1,8 @@
 package com.jibreelpowell.redbluegreen;
 
 
+import android.content.Intent;
+
 import com.jibreelpowell.redbluegreen.databinding.ActivityMainBinding;
 
 /**
@@ -12,13 +14,13 @@ public class MainActivityEventHandler {
     private final MainActivityViewModel viewModel;
     private final ActivityMainBinding binding;
 
+
     public MainActivityEventHandler(MainActivityViewModel viewModel, ActivityMainBinding binding) {
         this.viewModel = viewModel;
         this.binding = binding;
     }
 
     public void onClick() {
-
 
         int r = Integer.decode(binding.redValue.getText().toString());
         int g = Integer.decode(binding.greenValue.getText().toString());
