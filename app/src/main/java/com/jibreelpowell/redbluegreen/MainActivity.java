@@ -1,5 +1,6 @@
 package com.jibreelpowell.redbluegreen;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -33,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
         return intent;
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         MainActivityViewModel viewModel = new MainActivityViewModel(binding, this);
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 int b = intent.getIntExtra(KEY_BLUE_VALUE, 0);
                 binding.redValue.setText(String.valueOf(r));
                 binding.greenValue.setText(String.valueOf(g));
-                binding.greenValue.setText(String.valueOf(b));
+                binding.blueValue.setText(String.valueOf(b));
                 viewModel.setColor(r, g, b);
                 break;
         }

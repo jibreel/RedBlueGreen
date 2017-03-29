@@ -15,7 +15,7 @@ public class MainActivityEventHandler {
     private final ActivityMainBinding binding;
 
 
-    public MainActivityEventHandler(MainActivityViewModel viewModel, ActivityMainBinding binding) {
+    MainActivityEventHandler(MainActivityViewModel viewModel, ActivityMainBinding binding) {
         this.viewModel = viewModel;
         this.binding = binding;
     }

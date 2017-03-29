@@ -11,23 +11,24 @@ import com.jibreelpowell.redbluegreen.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 
 /**
  * Created by jibreel on 3/24/17.
  */
 
-public class MainActivityViewModel {
+class MainActivityViewModel {
 
     private final ActivityMainBinding binding;
     private final Activity activity;
 
-    public MainActivityViewModel(ActivityMainBinding binding, Activity activity) {
+    MainActivityViewModel(ActivityMainBinding binding, Activity activity) {
         this.binding = binding;
         this.activity = activity;
     }
 
-    public void setColor(int r, int g, int b) {
+    void setColor(int r, int g, int b) {
         r = Math.min(r, 255);
         g = Math.min(g, 255);
         b = Math.min(b, 255);
@@ -35,11 +36,11 @@ public class MainActivityViewModel {
         setColor(Color.rgb(r, g, b));
     }
 
-    public void setColor(int color) {
+    private void setColor(int color) {
         binding.canvas.setBackgroundColor(color);
     }
 
-    public void addShortcut(int r, int g, int b) {
+    private void addShortcut(int r, int g, int b) {
         ShortcutManager shortcutManager = activity.getSystemService(ShortcutManager.class);
 
         String label = String.format("(%s, %s, %s)", r, b, g);
@@ -51,7 +52,7 @@ public class MainActivityViewModel {
                 .setIcon(Icon.createWithResource(activity, R.drawable.ic_brush_black_24dp))
                 .build();
 
-        shortcutManager.setDynamicShortcuts(Arrays.asList(shortcutInfo));
-        shortcutManager.enableShortcuts(Arrays.asList("custom_shortcut"));
+        shortcutManager.setDynamicShortcuts(Collections.singletonList(shortcutInfo));
+        shortcutManager.enableShortcuts(Collections.singletonList("custom_shortcut"));
     }
 }
